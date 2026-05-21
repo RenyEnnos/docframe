@@ -1,6 +1,8 @@
-# Política de LaTeX
+# Política de LaTeX e Formato Final
 
-O Infrakit usa LaTeX como formato principal para documentos finais escritos.
+O Infrakit usa LaTeX como formato principal para documentos acadêmicos e técnicos formais. Essa é a opção padrão quando não há outro formato obrigatório ou stack já definida.
+
+LaTeX não deve ser imposto quando o tipo de entrega, canal de envio ou projeto existente exigir outro formato. Nesses casos, registre a exceção em `projeto/CONTEXTO_TRABALHO.md` e valide a ferramenta real de saída.
 
 ## Por Que LaTeX
 
@@ -15,7 +17,23 @@ LaTeX facilita:
 
 ## Verificação Inicial
 
-Antes de escrever o documento final, o agente deve verificar se existe uma ferramenta LaTeX disponível.
+Antes de escrever o documento final, o agente deve verificar qual é o formato final correto.
+
+Use LaTeX quando:
+
+- o trabalho for acadêmico ou técnico formal;
+- houver necessidade de citações, sumário e estrutura longa;
+- o usuário não tiver outra pipeline definida;
+- o PDF final deve ser reprodutível em `.tex`.
+
+Não force LaTeX quando:
+
+- o usuário já tiver uma stack funcional de geração;
+- o formato exigido for DOCX, HTML, Markdown, formulário ou modelo institucional;
+- o modo ativado declarar outro formato mais adequado;
+- a entrega for currículo, perfil, documentação de software ou conteúdo web-first.
+
+Quando LaTeX for o formato correto, verifique se existe uma ferramenta disponível.
 
 Verificações comuns:
 
@@ -27,6 +45,8 @@ which lualatex
 ```
 
 Se nada estiver disponível, o agente deve pedir permissão antes de configurar.
+
+Se LaTeX não for o formato correto, não peça instalação. Valide a stack real, como Python, HTML/CSS, WeasyPrint, Pandoc, Markdown, DOCX ou outra ferramenta declarada.
 
 ## Regra de Permissão
 
@@ -64,7 +84,7 @@ Essa estrutura só deve ser criada quando fizer sentido para o projeto. No iníc
 
 ## Verificação Antes de Entregar
 
-Antes de dizer que o PDF está pronto, o agente deve verificar:
+Antes de dizer que o PDF em LaTeX está pronto, o agente deve verificar:
 
 - compilação sem erro fatal;
 - sumário e referências atualizados;
@@ -73,3 +93,14 @@ Antes de dizer que o PDF está pronto, o agente deve verificar:
 - tabelas dentro da página;
 - PDF gerado no local correto;
 - checklist de entrega coerente com o tipo de trabalho.
+
+## Verificação de Formato Alternativo
+
+Quando o projeto usar outro formato, o agente deve verificar:
+
+- comando de geração executado sem erro;
+- arquivo final criado no local esperado;
+- formato abrível pelo usuário ou canal de envio;
+- layout conferido visualmente quando houver PDF, HTML ou DOCX;
+- checklist coerente com o modo ativado;
+- exceção ao LaTeX registrada no contexto.

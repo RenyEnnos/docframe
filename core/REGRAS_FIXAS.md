@@ -2,16 +2,22 @@
 
 Estas regras valem para qualquer tipo de trabalho.
 
-## 1. LaTeX é o Formato Principal
+## 1. Formato Final Deve Ser Deliberado
 
-Todo documento final escrito deve ser produzido em LaTeX, salvo quando a entrega exigir formalmente outro formato.
+LaTeX é o formato padrão para documentos acadêmicos e técnicos formais, mas o agente deve confirmar o formato final correto antes de configurar ferramentas.
 
-Se LaTeX não estiver instalado ou configurado, o agente deve:
+Use LaTeX quando não houver formato obrigatório diferente e quando ele fizer sentido para a entrega.
+
+Use o formato nativo do projeto quando a entrega exigir ou já existir uma stack adequada, como DOCX, HTML/CSS, Markdown, Python, WeasyPrint, Pandoc ou outro gerador.
+
+Se LaTeX for necessário e não estiver instalado ou configurado, o agente deve:
 
 1. verificar a situação;
 2. explicar ao usuário o que falta;
 3. pedir permissão antes de instalar ou configurar;
 4. registrar a decisão.
+
+Se LaTeX não for o formato correto, o agente não deve pedir instalação por reflexo. Ele deve registrar a exceção e validar a stack real.
 
 ## 2. O Tipo de Trabalho Não é Assumido
 

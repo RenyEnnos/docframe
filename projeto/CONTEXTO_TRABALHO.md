@@ -22,6 +22,8 @@ Este é o arquivo mestre do projeto. O agente deve preencher este documento apó
 
 - **Produto final**: preencher
 - **Formato obrigatório**: LaTeX/PDF, salvo exigência diferente
+- **Stack ou ferramenta de geração**: preencher
+- **Exceção ao LaTeX, se houver**: preencher
 - **Prazo**: preencher
 - **Tamanho esperado**: preencher
 - **Idioma**: preencher

@@ -33,11 +33,14 @@ Não despeje todas as perguntas de uma vez se o usuário estiver inseguro. Comec
 
 10. O resultado final precisa ser só texto, PDF, apresentação, resumo, artigo ou mais de um produto?
 
-11. O trabalho envolve proposta para uma instituição, setor, direção, coordenação, cliente interno ou órgão público?
+11. Já existe uma ferramenta ou stack de geração do documento?
+   Exemplos: LaTeX, Typst, Markdown, HTML/CSS, Python, WeasyPrint, DOCX, Google Docs.
 
-12. O trabalho envolve sistema, rede, usuários, login, dados pessoais, servidor, arquivos ou infraestrutura de TI?
+12. O trabalho envolve proposta para uma instituição, setor, direção, coordenação, cliente interno ou órgão público?
 
-13. Há PDFs ou versões parecidas que precisam ser comparadas antes de começar?
+13. O trabalho envolve sistema, rede, usuários, login, dados pessoais, servidor, arquivos ou infraestrutura de TI?
+
+14. Há PDFs ou versões parecidas que precisam ser comparadas antes de começar?
 
 ## Perguntas de Qualidade
 

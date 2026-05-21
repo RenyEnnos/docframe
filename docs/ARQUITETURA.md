@@ -27,7 +27,7 @@ O kit antigo tratava quase tudo como TCC. O Infrakit Cru muda essa lógica: o ag
 
 `core/` contém regras fixas:
 
-- LaTeX como formato principal;
+- formato final deliberado, com LaTeX como padrão para acadêmico/técnico formal;
 - linguagem natural e autoral;
 - fontes rastreáveis;
 - normas específicas acima de normas genéricas;

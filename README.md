@@ -1,6 +1,6 @@
 # Infrakit Cru
 
-Infraestrutura base para orientar agentes de IA na criação, revisão e entrega de trabalhos acadêmicos ou técnicos em LaTeX.
+Infraestrutura base para orientar agentes de IA na criação, revisão e entrega de trabalhos acadêmicos, técnicos e profissionais com formato final deliberado.
 
 O Infrakit Cru não começa assumindo que o trabalho é um TCC, artigo, relatório ou seminário. Primeiro o agente entrevista o usuário, entende o tipo de entrega e adapta os arquivos vivos do projeto. Só depois ele passa a escrever, revisar, pesquisar ou formatar.
 
@@ -38,8 +38,9 @@ Leia infrakit_cru/START_AQUI.md e siga o protocolo.
 
 ## Regras Permanentes
 
-- O documento final escrito deve ser produzido em LaTeX.
-- Se LaTeX não estiver disponível, o agente deve pedir permissão antes de configurar.
+- LaTeX é o padrão para documentos acadêmicos e técnicos formais.
+- Se outro formato for mais adequado ao canal real de entrega, o agente deve registrar a exceção e validar a stack usada.
+- Se LaTeX for necessário e não estiver disponível, o agente deve pedir permissão antes de configurar.
 - O agente deve preservar a voz do autor.
 - O texto não pode ter linguagem genérica, artificial ou com cara de resposta de IA.
 - Nenhuma fonte pode ser inventada.

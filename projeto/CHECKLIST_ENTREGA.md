@@ -17,6 +17,7 @@ Este checklist deve ser adaptado ao tipo real de trabalho.
 - [ ] Tamanho esperado registrado
 - [ ] Público avaliador identificado
 - [ ] Produto final definido
+- [ ] Formato final e stack de geração definidos
 - [ ] Fora de escopo registrado
 
 ## 2. Fontes e Conteúdo
@@ -53,8 +54,9 @@ Este checklist deve ser adaptado ao tipo real de trabalho.
 - [ ] Citações seguem a norma definida
 - [ ] Referências seguem a norma definida
 - [ ] Tabelas e figuras numeradas, se houver
-- [ ] PDF final gerado a partir de LaTeX
-- [ ] Documento compilou sem erro fatal
+- [ ] Arquivo final gerado no formato definido
+- [ ] Se for LaTeX, documento compilou sem erro fatal
+- [ ] Se não for LaTeX, stack real de geração validada
 - [ ] Revisão visual final feita no PDF
 
 ## 6. Revisão Final

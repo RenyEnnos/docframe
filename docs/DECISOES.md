@@ -8,9 +8,9 @@ O Infrakit foi dividido em `core/`, `agente/`, `projeto/` e `docs/`.
 
 Motivo: permitir que o agente adapte o trabalho sem modificar as regras permanentes do framework.
 
-## 2026-05-21 - Manter LaTeX como regra fixa
+## 2026-05-21 - Manter LaTeX como padrão forte
 
-O documento final escrito deve ser produzido em LaTeX, salvo exigência formal diferente.
+LaTeX é o padrão para documentos acadêmicos e técnicos formais, salvo exigência formal diferente ou modo específico com formato mais adequado.
 
 Motivo: preservar compilação reprodutível, controle de referências e formatação acadêmica.
 
@@ -37,3 +37,15 @@ Motivo: permitir propostas institucionais/técnicas sem transformar todo trabalh
 O protocolo `core/VALIDACAO_E_ENTREGA.md` classifica níveis de verdade, promessas fortes e status de prontidão.
 
 Motivo: evitar que texto bem escrito seja confundido com fato validado ou entrega final.
+
+## 2026-05-21 - Tratar LaTeX como padrão, não imposição universal
+
+LaTeX segue como padrão para documentos acadêmicos e técnicos formais, mas modos específicos podem declarar outra stack de saída quando o canal real exigir, como PDF/DOCX de currículo gerado por HTML/CSS.
+
+Motivo: preservar reprodutibilidade sem forçar uma ferramenta inadequada para currículos, documentação web-first ou pipelines já existentes.
+
+## 2026-05-21 - Adiar CLI e separação completa de templates
+
+O feedback sobre `infrakit init`, `core/formats/` e isolamento total dos arquivos do usuário é válido, mas não foi implementado nesta etapa.
+
+Motivo: isso muda a arquitetura de distribuição do projeto. Antes de criar CLI ou mover `projeto/` para uma área gerada/ignorada, o fluxo precisa ser testado em mais casos reais.

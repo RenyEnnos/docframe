@@ -32,7 +32,7 @@ Cada dimensão recebe nota de 0 a 10, com justificativa curta. Os pesos devem se
 | 5 | Normas e formatação | 10% | ABNT, manual institucional, citações, tabelas, figuras |
 | 6 | Qualidade da linguagem | 10% | clareza, coesão, naturalidade, ausência de linguagem genérica |
 | 7 | Coerência interna | 10% | alinhamento entre objetivo, método, discussão e conclusão |
-| 8 | Entrega final | 10% | PDF, LaTeX compilando, checklist cumprido, pendências resolvidas |
+| 8 | Entrega final | 10% | arquivo final gerado, stack validada, checklist cumprido, pendências resolvidas |
 
 Total: 100%.
 
