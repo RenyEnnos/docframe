@@ -1,115 +1,104 @@
+---
+docframe_version: "0.2.0"
+estado: NAO_INICIADO
+estado_anterior: null
+prontidao: NAO_AVALIADA
+tipo_entrega: null
+produto_final: null
+formato_final: null
+arquivo_canonico: null
+ultima_atualizacao: null
+responsavel_atualizacao: null
+---
+
 # Contexto do Trabalho
 
-Este é o arquivo mestre do projeto. O agente deve preencher este documento após a entrevista inicial e mantê-lo atualizado.
+Este é o arquivo mestre do estado e o resumo canônico de retomada.
 
-## Estado do Contexto
+## Objetivo e entrega
 
-- **Status**: não preenchido
-- **Última atualização**: preencher
-- **Agente responsável pela atualização**: preencher
-
-## Identificação
-
-- **Tipo de trabalho**: preencher
-- **Título provisório ou tema**: preencher
-- **Autor(es)**: preencher
-- **Curso / disciplina / área**: preencher
-- **Instituição**: preencher
-- **Professor, orientador ou avaliador**: preencher
-- **Público final**: preencher
-
-## Entrega Esperada
-
+- **Objetivo real**: preencher
 - **Produto final**: preencher
-- **Formato obrigatório**: LaTeX/PDF, salvo exigência diferente
-- **Stack ou ferramenta de geração**: preencher
-- **Exceção ao LaTeX, se houver**: preencher
+- **Público ou destinatário**: preencher
+- **Canal de entrega**: preencher
+- **Formato final**: preencher
 - **Prazo**: preencher
-- **Tamanho esperado**: preencher
-- **Idioma**: preencher
-- **Critério de aprovação ou nota desejada**: preencher
-- **Status de prontidão alvo**: revisão do usuário / revisão técnica / avaliação acadêmica / submissão institucional / entrega final
+- **Critério de conclusão**: preencher
+- **Nível de autonomia autorizado**: preencher
 
-## Modos e Módulos Ativados
+## Cobertura do contexto mínimo
 
-| Modo ou módulo | Status | Motivo |
-|---|---|---|
-| preencher | ativo/inativo | preencher |
+| ID | Categoria | Valor atual | Tipo | Cobertura | Confiança | Impacto da lacuna | Próxima ação | Evidência |
+|---|---|---|---|---|---|---|---|---|
+| CTX-01 | objetivo | preencher | requisito | ausente | baixa | bloqueador | perguntar ou extrair | preencher |
+| CTX-02 | produto final | preencher | requisito | ausente | baixa | bloqueador | perguntar ou extrair | preencher |
+| CTX-03 | público/destinatário | preencher | requisito | ausente | baixa | alto | perguntar ou inferir reversivelmente | preencher |
+| CTX-04 | formato/canal | preencher | requisito | ausente | baixa | alto | verificar exigência | preencher |
+| CTX-05 | materiais e fontes | preencher | material | ausente | baixa | alto | catalogar | preencher |
+| CTX-06 | autoridades e restrições | preencher | restrição | ausente | baixa | alto | inspecionar materiais | preencher |
+| CTX-07 | critério de conclusão | preencher | requisito | ausente | baixa | alto | adaptar rubrica/checklist | preencher |
+| CTX-08 | autonomia | preencher | decisão | ausente | baixa | alto | confirmar | preencher |
 
-## Tema e Escopo
+Valores de cobertura: `coberto`, `hipotese_reversivel`, `nao_aplicavel`, `ausente`.
 
-### Tema
+## Escopo
 
-Preencher.
+### Dentro do escopo
 
-### Problema, pergunta ou objetivo central
+- preencher
 
-Preencher.
+### Fora do escopo
 
-### Objetivos específicos
+- preencher
 
-1. preencher
-2. preencher
-3. preencher
+## Autoridades e conflitos
 
-### Fora de escopo
+| ID | Autoridade ou regra | Origem | Aplicação | Status | Conflito |
+|---|---|---|---|---|---|
+| AUT-001 | preencher | preencher | preencher | pendente | nenhum/preencher |
 
-Liste aqui o que não deve ser feito.
+## Materiais e versões
 
-## Materiais Disponíveis
+| ID | Arquivo ou material | Identificador/hash | Papel | Status | Observação |
+|---|---|---|---|---|---|
+| MAT-001 | preencher | preencher | candidato/canônico/apoio | pendente | preencher |
 
-| Material | Local ou descrição | Status |
-|---|---|---|
-| Enunciado / edital / manual | preencher | pendente |
-| Textos já escritos | preencher | pendente |
-| Dados / tabelas / imagens | preencher | pendente |
-| Referências fornecidas | preencher | pendente |
-| Modelo institucional | preencher | pendente |
+## Módulos ativos
 
-## Arquivo Canônico
-
-Use quando houver PDF, DOCX, LaTeX ou mais de uma versão parecida.
-
-| Arquivo | SHA256 | Páginas ou tamanho | Status | Observação |
-|---|---|---:|---|---|
-| preencher | preencher | preencher | candidato/canônico/descartado | preencher |
-
-## Normas e Autoridades
-
-Registre a regra que manda no trabalho.
-
-| Autoridade | Aplicação | Observação |
-|---|---|---|
-| Enunciado do professor | preencher | preencher |
-| Manual institucional | preencher | preencher |
-| ABNT ou outra norma | preencher | preencher |
-| Padrão do Docframe | usado apenas onde não houver regra superior | preencher |
-
-## Política de Pesquisa
-
-- **Pesquisar fontes externas?** preencher
-- **Bases preferidas**: preencher
-- **Limites de pesquisa**: preencher
-- **Fontes proibidas ou indesejadas**: preencher
-
-## Decisões Importantes
-
-Registre decisões que afetam a continuidade do trabalho.
-
-| Data | Decisão | Motivo |
-|---|---|---|
-| preencher | preencher | preencher |
-
-## Níveis de Verdade
-
-Classifique afirmações importantes, principalmente números, custos, riscos, prazos, conformidade e dados institucionais.
-
-| Afirmação | Nível | Evidência | Ação |
+| Módulo | Status | Motivo | Condição de descarregamento |
 |---|---|---|---|
-| preencher | usuário/fonte/instituição/hipótese | preencher | preencher |
+| core genérico | ativo | obrigatório | nunca durante o trabalho |
 
-## Pendências
+## Política de pesquisa
 
-| Pendência | Impacto | Próximo passo |
-|---|---|---|
-| preencher | preencher | preencher |
+- **Pesquisa externa permitida**: preencher
+- **Fontes prioritárias**: preencher
+- **Fontes proibidas ou limites**: preencher
+- **Data de corte ou atualidade necessária**: preencher
+
+## Bloqueadores
+
+| ID | Bloqueador | Impacto | Responsável pela resolução | Recuperação | Status |
+|---|---|---|---|---|---|
+| BLQ-001 | preencher | preencher | preencher | preencher | aberto |
+
+## Próxima ação recomendada
+
+Preencher com uma ação única, permitida pelo estado atual.
+
+## Evidências de estado
+
+| Data | Estado anterior | Estado novo | Gate | Evidências | Responsável | Reabrir quando |
+|---|---|---|---|---|---|---|
+| preencher | NAO_INICIADO | preencher | G0/G1/... | preencher | preencher | preencher |
+
+## Ponteiros canônicos
+
+- decisões: `projeto/DECISOES.md`
+- fontes: `projeto/REFERENCIAS_CANDIDATAS.md`
+- afirmações: `projeto/AFIRMACOES.md`
+- critérios: `projeto/RUBRICA.md`
+- avaliações: `projeto/SCORECARD.md`
+- gates: `projeto/CHECKLIST_ENTREGA.md`
+- histórico: `projeto/REGISTRO_ITERACOES.md`
+- artefato final: preencher
