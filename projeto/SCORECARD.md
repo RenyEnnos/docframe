@@ -1,47 +1,35 @@
-# Scorecard
+# Registro de Avaliações
 
-Use este arquivo para acompanhar evolução por iteração.
+Este arquivo registra avaliações executadas; não é fonte de verdade para requisitos nem aprovação externa.
 
-## Estado Atual
+## Avaliação atual
 
-- **Iteração atual**: 0
+- **ID da avaliação**: preencher
 - **Data**: preencher
-- **Avaliador**: preencher
-- **Nota final**: não avaliada
-- **Status geral**: contexto ainda não preenchido
-- **Status de prontidão**: não definido
+- **Artefato/versão**: preencher
+- **Papel do avaliador**: verificador_deterministico/avaliador_critico/aprovador
+- **Agente ou pessoa**: preencher
+- **Estado antes**: preencher
+- **Estado depois**: preencher
 
-## Quadro de Notas
-
-| Dimensão | Peso | Iteração 0 | Meta | Gap | Prioridade |
+| Critério | Resultado | Evidência observada | Confiança | Lacuna | Ação prioritária |
 |---|---|---|---|---|---|
-| Adequação ao pedido | 15% | preencher | preencher | preencher | preencher |
-| Estrutura | 15% | preencher | preencher | preencher | preencher |
-| Fundamentação | 15% | preencher | preencher | preencher | preencher |
-| Desenvolvimento | 15% | preencher | preencher | preencher | preencher |
-| Normas e formatação | 10% | preencher | preencher | preencher | preencher |
-| Qualidade da linguagem | 10% | preencher | preencher | preencher | preencher |
-| Coerência interna | 10% | preencher | preencher | preencher | preencher |
-| Entrega final | 10% | preencher | preencher | preencher | preencher |
+| RUB-001 | NAO_AVALIADO | preencher | preencher | preencher | preencher |
 
-## Cálculo
+## Verificações determinísticas
 
-Quando houver notas, calcular:
+| ID | Verificação | Comando/método | Resultado | Evidência |
+|---|---|---|---|---|
+| VER-001 | preencher | preencher | passou/falhou/não_executada | preencher |
 
-```text
-Nota final = soma(nota da dimensão x peso da dimensão)
-```
+## Bloqueadores
 
-## Histórico Resumido
+| ID | Descrição | Origem | Status | Impede qual prontidão? |
+|---|---|---|---|---|
+| BLQ-001 | preencher | preencher | aberto/fechado/aceito_por_autoridade | preencher |
 
-| Iteração | Data | Foco | Nota antes | Nota depois | Próximo passo |
+## Histórico
+
+| Avaliação | Data | Versão | Resultado geral | Motivo de parada | Próximo passo |
 |---|---|---|---|---|---|
-| 0 | preencher | baseline | preencher | preencher | preencher |
-
-## Prioridade Atual
-
-Preencher após avaliação baseline.
-
-## Observação Sobre Notas
-
-Notas são estimativas de qualidade do documento, não prova de validação externa. Sempre combine a nota com o status de prontidão em `projeto/CHECKLIST_ENTREGA.md`.
+| preencher | preencher | preencher | preencher | critérios/limite/melhoria_marginal/falta_evidencia/decisao_humana/bloqueio | preencher |
