@@ -1,93 +1,64 @@
 # Validação e Entrega
 
-Este protocolo evita que o agente trate texto escrito como se fosse fato validado. Use em qualquer trabalho que contenha dados, promessas, números, riscos, custos, conformidade, desempenho ou decisão institucional.
+## Separação de verificações
 
-## Quatro Níveis de Verdade
+### Determinísticas
 
-Classifique informações importantes:
+Use ferramentas ou checagens objetivas para:
 
-| Nível | Significado | Como registrar |
-|---|---|---|
-| confirmado pelo usuário | o autor declarou ou observou | registrar como declaração do usuário |
-| confirmado por fonte | há link, documento, norma, artigo ou evidência externa | registrar fonte exata |
-| confirmado pela instituição | setor, professor, direção, banca ou responsável validou | registrar quem validou e quando |
-| hipótese de trabalho | usado provisoriamente até validação | marcar como hipótese ou pendência |
+- existência de arquivo e caminho;
+- campos obrigatórios;
+- estados e valores permitidos;
+- links internos;
+- compilação ou geração;
+- fórmulas e totais;
+- formato, tamanho e estrutura;
+- presença de evidência em item marcado como validado.
 
-Não misture esses níveis no texto. Uma observação do usuário não deve virar dado institucional sem confirmação.
+### Subjetivas
 
-## Promessas Fortes
+Use rubrica atômica e ancorada para clareza, coerência, adequação, argumentação, legibilidade e qualidade visual.
 
-Procure expressões que exigem evidência forte:
+## Escala
 
-- custo zero;
-- sem custo;
-- sem risco;
-- garantido;
-- garante;
-- 100%;
-- todos os usuários;
-- nenhum impacto;
-- nenhuma interferência;
-- total conformidade;
-- sempre;
-- nunca;
-- suporta X usuários;
-- em X dias;
-- permanente;
-- definitivo.
+Cada critério deve usar um destes resultados:
 
-Para cada ocorrência, escolha uma ação:
+- `ATENDE`;
+- `NAO_ATENDE`;
+- `NAO_AVALIADO`;
+- `NAO_APLICAVEL`.
 
-1. comprovar com fonte ou teste;
-2. transformar em hipótese;
-3. reduzir para formulação proporcional;
-4. remover.
+Qualidade gradual pode usar escala de 1 a 4 com âncoras explícitas. Toda avaliação exige evidência e confiança.
 
-## Matriz de Evidência
+## Bloqueadores
 
-Use esta tabela em `projeto/CONTEXTO_TRABALHO.md`, `projeto/BASE_CONHECIMENTO.md` ou no log da iteração quando houver risco:
+Uma nota alta não compensa:
 
-| Afirmação | Nível de verdade | Evidência | Ação |
-|---|---|---|---|
-| preencher | hipótese de trabalho | pendente | validar antes da entrega |
+- fonte inventada;
+- requisito obrigatório ausente;
+- dado contraditório não resolvido;
+- artefato corrompido;
+- formato final incorreto;
+- bloqueador institucional;
+- ausência de autorização necessária.
 
-## Feito Não é Validado
+## Inspeção por artefato
 
-Separe quatro estados:
+- DOCX: estilos, estrutura, campos, compatibilidade e inspeção visual;
+- PDF: renderização, margens, paginação, figuras e fontes;
+- LaTeX: compilação, referências e PDF gerado quando esse for o produto;
+- Markdown: links, hierarquia e renderização;
+- HTML/CSS: renderização, responsividade e acessibilidade aplicável;
+- apresentação: narrativa, legibilidade, proporção e exportação;
+- planilha: fórmulas, tipos, unidades, validações e abertura;
+- formulário ou e-mail: campos, limites, destinatário e texto final.
 
-| Estado | Significado |
-|---|---|
-| escrito | aparece no documento |
-| validado por fonte | sustentado por fonte rastreável |
-| validado tecnicamente | testado, calculado ou confirmado por responsável técnico |
-| aprovado | aceito pelo usuário, avaliador ou instituição competente |
+## Prontidão
 
-Um item escrito no documento ainda pode estar pendente de validação.
+- `PRONTO_PARA_REVISAO`: pode ser avaliado pelo usuário ou terceiro, mas ainda há confirmação ou ajuste esperado;
+- `PRONTO_PARA_ENTREGA`: requisitos e gates de entrega atendidos, artefato real inspecionado e bloqueadores incompatíveis fechados;
+- `ENCERRADO_COM_LIMITACOES`: trabalho termina com impedimentos explicitamente documentados.
 
-## Pronto Para Quê?
+## Refinamento e parada
 
-Sempre diga qual prontidão foi atingida:
-
-| Status | Uso |
-|---|---|
-| pronto para revisão do usuário | o texto já pode ser lido pelo autor |
-| pronto para revisão técnica | precisa de validação por especialista ou setor técnico |
-| pronto para avaliação acadêmica | adequado para professor, banca ou disciplina |
-| pronto para submissão institucional | adequado para direção, coordenação, órgão ou processo |
-| pronto para entrega final | pendências bloqueadoras resolvidas e formato final conferido |
-
-Evite dizer apenas "pronto". Diga "pronto para revisão do usuário" ou outro status específico.
-
-## Revisão Visual Final
-
-Antes de entrega em PDF, confira:
-
-- capa ou primeira página adequada ao público;
-- hierarquia de títulos clara;
-- tabelas dentro das margens;
-- figuras legíveis;
-- sumário coerente, se houver;
-- paginação correta;
-- referências sem duplicação visível;
-- nenhum elemento flutuou para seção errada;
-- o PDF parece final, não rascunho técnico.
+Após cada avaliação, produza lacunas priorizadas. Corrija somente lacunas confirmadas. Pare por critérios atendidos, limite de iteração, melhoria marginal, falta de evidência, decisão humana ou bloqueio. Registre o motivo.
