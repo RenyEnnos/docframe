@@ -1,43 +1,23 @@
 # Registro de Iterações
 
-Este é o registro cronológico do trabalho.
+Histórico curto e cronológico. Detalhes extensos podem ir para `projeto/logs/`.
 
-Para iterações simples, registre aqui. Para iterações grandes, crie um arquivo detalhado em `logs/` e coloque o link ou nome do arquivo neste registro.
-
-## Modelo Curto
+## Modelo
 
 ```markdown
-## ITER 000 - YYYY-MM-DD - Título curto
+## ITER-000 — YYYY-MM-DD — título
 
-| Campo | Valor |
-|---|---|
-| Modo | Diagnóstico / Pesquisa / Modelagem / Redação / Revisão / Formatação / Verificação |
-| Agente | preencher |
-| Arquivos alterados | preencher |
-| Resultado | preencher |
-| Pendências | preencher |
-
-### O que mudou
-
-1. preencher
-2. preencher
-
-### Próximo passo
-
-preencher
+- Estado anterior: DESCOBERTA
+- Estado final: CONTEXTO_MINIMO
+- Papel executado: produtor/verificador/avaliador
+- Arquivos alterados: preencher
+- Evidências geradas: preencher
+- Bloqueadores: preencher
+- Motivo de parada: critérios/limite/melhoria_marginal/falta_evidencia/decisao_humana/bloqueio
+- Próxima ação permitida: preencher
+- Condição de reabertura: preencher
 ```
-
-## Quando Criar Log Separado
-
-Crie um arquivo em `logs/` quando:
-
-- a iteração tiver muitas decisões;
-- houver pesquisa extensa;
-- houver grande reescrita;
-- houver diagnóstico de erro de LaTeX;
-- houver mudança de estrutura do trabalho;
-- for necessário preservar evidência detalhada.
 
 ## Iterações
 
-Adicione as entradas abaixo, da mais antiga para a mais recente.
+Adicione entradas abaixo, da mais antiga para a mais recente. Não use este arquivo como substituto do estado canônico.
