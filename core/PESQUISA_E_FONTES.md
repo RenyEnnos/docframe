@@ -1,67 +1,70 @@
-# Pesquisa e Fontes
+# Pesquisa, Afirmações e Proveniência
 
-Este documento orienta como o agente deve pesquisar e registrar fontes.
+Use este módulo quando a entrega depender de informação externa ou de materiais fornecidos.
 
-## Regra Principal
+## Ciclo da fonte
 
-O agente só deve pesquisar fontes externas quando:
+Uma fonte percorre estados distintos:
 
-- o usuário pedir;
-- o usuário autorizar;
-- a tarefa depender claramente de informação atualizada ou verificável.
+`buscar` → `encontrada` → `inspecionada` → `confiavel_para_uso` → `incorporada` → `citacao_conferida`
 
-Se o usuário preferir usar apenas materiais fornecidos, respeite isso.
+Também pode ser `descartada`. Nenhum estado é inferido automaticamente do anterior.
 
-## Fontes Aceitáveis
+## Registro mínimo da fonte
 
-Priorize:
+Em `projeto/REFERENCIAS_CANDIDATAS.md`, registre:
 
-- artigos científicos;
-- livros técnicos;
-- normas oficiais;
-- manuais institucionais;
-- documentos de órgãos públicos;
-- bases acadêmicas;
-- páginas oficiais de instituições.
+- identificador estável;
+- título e origem;
+- link, caminho, DOI ou hash;
+- tipo de fonte;
+- data e responsável pela inspeção;
+- trecho, página, seção ou localização relevante;
+- avaliação de confiabilidade e aplicabilidade;
+- afirmações ligadas;
+- local de uso;
+- status e motivo de descarte, quando houver.
 
-Use com cuidado:
+## Registro mínimo da afirmação
 
-- blogs;
-- vídeos;
-- notícias;
-- apostilas sem autoria clara;
-- materiais sem data.
+Em `projeto/AFIRMACOES.md`, registre:
 
-Evite como fonte principal:
+- ID;
+- texto ou resumo atômico;
+- tipo: fato externo, declaração do usuário, dado fornecido, inferência, hipótese ou requisito institucional;
+- origem;
+- localização da evidência;
+- confiança;
+- status de validação;
+- onde foi usada;
+- responsável;
+- última verificação.
 
-- Wikipedia;
-- posts sem autoria;
-- textos sem referência;
-- conteúdo gerado por IA sem fonte primária.
+Divida frases complexas quando uma única citação não sustentar todos os seus componentes.
 
-## Registro Mínimo de Fonte
+## Proveniência mínima
 
-Ao adicionar uma fonte em `projeto/REFERENCIAS_CANDIDATAS.md`, registre:
+- entidade: fonte, arquivo, dado, afirmação ou artefato;
+- atividade: busca, inspeção, cálculo, revisão, transformação ou aprovação;
+- agente: pessoa, modelo, ferramenta ou instituição;
+- derivação: qual entidade e atividade originaram a saída.
 
-- status;
-- referência provisória;
-- link ou identificador;
-- resumo do achado;
-- onde pode entrar no trabalho;
-- pendências de verificação.
+Não é necessário RDF ou banco de dados; IDs e links internos são suficientes.
 
-## Status Recomendados
+## Qualidade da citação
 
-| Status | Significado |
-|---|---|
-| buscar | ainda precisa ser encontrada |
-| encontrada | fonte localizada, mas não validada |
-| validada | fonte confiável e útil |
-| incorporada | já usada no texto |
-| descartada | não será usada, com justificativa |
+Avalie separadamente:
 
-## Proibição
+- correção: a fonte apoia a afirmação?
+- completude: todas as partes materiais estão apoiadas?
+- qualidade: a fonte é adequada ao contexto?
+- posição: a citação está ligada à afirmação correta?
 
-Não invente DOI, autores, títulos, ano, páginas, periódico, lei, norma ou URL.
+## Revisão factual
 
-Se uma informação não foi confirmada, marque como pendente.
+1. extraia afirmações materiais;
+2. classifique cada uma;
+3. procure ou inspecione evidência;
+4. revise ou reduza afirmações não sustentadas;
+5. preserve a intenção e a voz quando corrigir;
+6. registre conflitos e limitações.

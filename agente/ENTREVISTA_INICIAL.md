@@ -1,74 +1,71 @@
-# Entrevista Inicial
+# Elicitação Adaptativa
 
-Use esta entrevista para adaptar o Docframe ao trabalho real. O usuário pode responder parcialmente. Se ele disser "não sei", registre como pendência e siga com uma hipótese conservadora.
+A entrevista é orientada por cobertura, não por um questionário fixo.
 
-## Como Perguntar
+## 1. Extrair antes de perguntar
 
-Não despeje todas as perguntas de uma vez se o usuário estiver inseguro. Comece pelas essenciais. Depois aprofunde.
+Leia o pedido e os materiais disponíveis. Registre cada informação como:
 
-## Perguntas Essenciais
+- requisito obrigatório;
+- preferência;
+- restrição;
+- material disponível;
+- declaração do usuário;
+- hipótese;
+- decisão;
+- pendência.
 
-1. Que tipo de entrega é essa?
-   Exemplos: TCC, artigo, relatório, seminário, revisão bibliográfica, resumo expandido, projeto de pesquisa, estudo dirigido, trabalho de disciplina.
+Não pergunte novamente algo já conhecido. Quando duas fontes conflitarem, registre o conflito e pergunte somente se ele alterar uma decisão relevante.
 
-2. Qual é o tema ou título provisório?
+## 2. Matriz de cobertura
 
-3. Qual curso, disciplina, instituição ou contexto?
+Use a seção `Cobertura do contexto mínimo` em `projeto/CONTEXTO_TRABALHO.md`.
 
-4. Quem vai avaliar?
-   Exemplos: professor, banca, orientador, revista, evento, cliente, coordenação.
+Para cada lacuna, registre:
 
-5. Existe enunciado, edital, manual, PDF, modelo ou rubrica fornecida?
-   Se existir, peça o arquivo ou o texto.
+- impacto: baixo, médio, alto ou bloqueador;
+- confiança no entendimento atual: baixa, média ou alta;
+- ação: inferir conservadoramente, pesquisar, perguntar ou aguardar autoridade;
+- reversibilidade da hipótese.
 
-6. Qual é o prazo e o tamanho esperado?
-   Exemplos: número de páginas, palavras, tempo de apresentação.
+## 3. Cobertura mínima comum
 
-7. O usuário já tem textos, dados, referências ou materiais base?
+Todo trabalho precisa de evidência suficiente para:
 
-8. O agente deve pesquisar fontes externas ou usar apenas o que foi fornecido?
+1. objetivo real;
+2. produto final;
+3. público ou destinatário;
+4. formato e canal de entrega;
+5. materiais e fontes permitidos;
+6. restrições e autoridades aplicáveis;
+7. critério de conclusão;
+8. nível de autonomia autorizado.
 
-9. Existe uma norma obrigatória?
-   Exemplos: ABNT, manual institucional, modelo do professor, template de evento.
+Itens podem ser `não aplicáveis`, desde que haja justificativa.
 
-10. O resultado final precisa ser só texto, PDF, apresentação, resumo, artigo ou mais de um produto?
+## 4. Cobertura por tipo de entrega
 
-11. Já existe uma ferramenta ou stack de geração do documento?
-   Exemplos: LaTeX, Typst, Markdown, HTML/CSS, Python, WeasyPrint, DOCX, Google Docs.
+Adicione apenas o que pode mudar o resultado:
 
-12. O trabalho envolve proposta para uma instituição, setor, direção, coordenação, cliente interno ou órgão público?
+- currículo: oportunidade-alvo e base factual;
+- revisão bibliográfica: pergunta, recorte, política de busca e norma;
+- parecer: questão, autoridade e padrão de análise;
+- proposta institucional: decisor, decisão solicitada, recursos e validações;
+- relatório baseado em arquivos: conjunto canônico de materiais e limites de inferência;
+- apresentação: audiência, duração, proporção e formato de exportação;
+- planilha: estrutura dos dados, fórmulas, unidade, validações e uso posterior.
 
-13. O trabalho envolve sistema, rede, usuários, login, dados pessoais, servidor, arquivos ou infraestrutura de TI?
+## 5. Como perguntar
 
-14. Há PDFs ou versões parecidas que precisam ser comparadas antes de começar?
+- comece pela lacuna de maior impacto;
+- faça uma pergunta ou pequeno grupo coerente;
+- explique por que a resposta muda o trabalho quando isso não for óbvio;
+- aceite “não sei”;
+- proponha uma hipótese conservadora e reversível;
+- avance com trabalho preparatório quando não houver bloqueio.
 
-## Perguntas de Qualidade
+## 6. Critério de encerramento
 
-Use quando o contexto básico já estiver claro:
+A entrevista termina quando todos os campos comuns estão `coberto`, `não aplicável` ou `hipótese reversível`, e nenhuma lacuna bloqueadora impede planejamento.
 
-1. Qual nota, aprovação ou resultado o usuário quer atingir?
-2. O trabalho deve ter tom mais acadêmico, técnico, didático ou executivo?
-3. Há palavras, autores, temas ou abordagens que precisam aparecer?
-4. Há algo que o professor proibiu ou criticou antes?
-5. O usuário quer que o agente revise um texto existente ou escreva a partir do zero?
-6. O texto precisa convencer alguém a tomar uma decisão prática?
-7. Há promessas fortes no material atual, como custo zero, sem risco, garantido, 100%, todos os usuários ou total conformidade?
-
-## Saída da Entrevista
-
-Após a entrevista, atualize:
-
-- `projeto/CONTEXTO_TRABALHO.md`
-- `projeto/RUBRICA.md`
-- `projeto/CHECKLIST_ENTREGA.md`
-- `projeto/BASE_CONHECIMENTO.md`, se houver conteúdo técnico
-- `projeto/REFERENCIAS_CANDIDATAS.md`, se houver busca ou fontes
-- `projeto/REGISTRO_ITERACOES.md`
-- módulos ativados conforme `agente/ROTEAMENTO_MODOS.md`
-
-Depois informe ao usuário:
-
-1. o tipo de trabalho entendido;
-2. o que ainda está incerto;
-3. quais arquivos foram ajustados;
-4. qual é o próximo passo recomendado.
+A descoberta deve ser reaberta quando houver mudança material em objetivo, destinatário, autoridade, formato, dados, escopo ou critério de aceitação.

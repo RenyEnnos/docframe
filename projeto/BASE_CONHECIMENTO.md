@@ -1,55 +1,21 @@
-# Base de Conhecimento
+# Base de Conhecimento Derivada
 
-Este arquivo guarda o conhecimento técnico usado no trabalho. Ele deve ser preenchido progressivamente.
+Este arquivo é um resumo operacional. Não é fonte de verdade para estado, decisões, fontes ou afirmações.
 
-## Estado
-
-- **Status**: vazio
 - **Última atualização**: preencher
-- **Política de pesquisa**: preencher
+- **Derivado de**: IDs de `AFIRMACOES.md`, `REFERENCIAS_CANDIDATAS.md` e `DECISOES.md`
+- **Status**: desatualizado até preenchimento
 
-## Tema Central
+## Conceitos e dados
 
-Preencher.
-
-## Conceitos Essenciais
-
-| Conceito | Definição | Fonte | Confiança |
+| Resumo | IDs de origem | Confiança | Uso provável |
 |---|---|---|---|
-| preencher | preencher | preencher | pendente |
+| preencher | AF-001/FON-001/DEC-001 | preencher | preencher |
 
-## Pontos Que Precisam Aparecer no Trabalho
+## Lacunas
 
-1. preencher
-2. preencher
-3. preencher
+| Lacuna | Impacto | Origem | Como resolver |
+|---|---|---|---|
+| preencher | preencher | preencher | preencher |
 
-## Dados Relevantes
-
-| Dado | Valor ou descrição | Nível de verdade | Fonte | Onde usar |
-|---|---|---|---|---|
-| preencher | preencher | usuário/fonte/instituição/hipótese | preencher | preencher |
-
-## Argumentos Fortes
-
-| Argumento | Base | Seção provável |
-|---|---|---|
-| preencher | preencher | preencher |
-
-## Lacunas e Dúvidas
-
-| Dúvida | Impacto | Como resolver |
-|---|---|---|
-| preencher | preencher | preencher |
-
-## Promessas Fortes a Revisar
-
-Registre aqui frases que precisam de evidência, teste ou reescrita proporcional.
-
-| Frase ou afirmação | Risco | Ação |
-|---|---|---|
-| preencher | preencher | preencher |
-
-## Observações do Usuário
-
-Registre aqui explicações do usuário que ajudam a preservar a voz, intenção e contexto do trabalho.
+Não copie manualmente o mesmo fato em vários arquivos sem apontar o ID canônico.

@@ -1,67 +1,36 @@
 # Rubrica do Trabalho
 
-Esta rubrica começa genérica. O agente deve adaptá-la ao tipo real de trabalho após a entrevista inicial.
+A rubrica deve ser adaptada em `MODELAGEM`. Critérios são atômicos, observáveis e orientados na mesma direção.
 
-## Estado da Rubrica
+## Metadados
 
-- **Status**: genérica, precisa adaptar
-- **Tipo de trabalho alvo**: preencher
-- **Base da avaliação**: professor, edital, manual, ABNT ou rubrica própria
-- **Meta**: preencher
+- **Tipo de entrega**: preencher
+- **Base da rubrica**: preencher
+- **Aprovador esperado**: preencher
+- **Status**: genérica
 
-## Como Pontuar
+## Resultados permitidos
 
-Cada dimensão recebe nota de 0 a 10, com justificativa curta. Os pesos devem ser ajustados ao tipo de trabalho.
+- `ATENDE`
+- `NAO_ATENDE`
+- `NAO_AVALIADO`
+- `NAO_APLICAVEL`
 
-| Nota | Interpretação |
-|---|---|
-| 9-10 | excelente, atende plenamente ao critério |
-| 7-8 | bom, com ajustes pontuais |
-| 5-6 | aceitável, mas com lacunas importantes |
-| 3-4 | fraco, exige reestruturação |
-| 0-2 | ausente ou inadequado |
+Para qualidade gradual, use 1 a 4:
 
-## Dimensões Genéricas
+1. inadequado ou ausente;
+2. atende parcialmente com lacunas relevantes;
+3. atende de forma adequada;
+4. atende de forma forte e consistente.
 
-| # | Dimensão | Peso inicial | O que avalia |
-|---|---|---|---|
-| 1 | Adequação ao pedido | 15% | se responde exatamente ao enunciado, professor, edital ou objetivo |
-| 2 | Estrutura | 15% | organização, sequência lógica, seções necessárias |
-| 3 | Fundamentação | 15% | uso correto de conceitos, dados, teoria e referências |
-| 4 | Desenvolvimento | 15% | profundidade, argumentação, análise e conexão entre ideias |
-| 5 | Normas e formatação | 10% | ABNT, manual institucional, citações, tabelas, figuras |
-| 6 | Qualidade da linguagem | 10% | clareza, coesão, naturalidade, ausência de linguagem genérica |
-| 7 | Coerência interna | 10% | alinhamento entre objetivo, método, discussão e conclusão |
-| 8 | Entrega final | 10% | arquivo final gerado, stack validada, checklist cumprido, pendências resolvidas |
+## Critérios
 
-Total: 100%.
+| ID | Critério atômico | Tipo | Método | Resultado | Evidência esperada | Bloqueador? | Confiança |
+|---|---|---|---|---|---|---|---|
+| RUB-001 | responde ao objetivo declarado | qualidade 1-4 | avaliação crítica | NAO_AVALIADO | relação explícita entre objetivo e conteúdo | não | preencher |
+| RUB-002 | formato final corresponde à exigência registrada | binário | verificação determinística | NAO_AVALIADO | arquivo e requisito | sim | preencher |
+| RUB-003 | afirmações materiais possuem status e evidência proporcionais | binário | inspeção de registros | NAO_AVALIADO | IDs AF/FON | sim | preencher |
 
-## Adaptação por Tipo
+## Adaptação
 
-Após identificar o trabalho, o agente deve ajustar:
-
-- dimensões;
-- pesos;
-- critérios mínimos;
-- itens bloqueadores;
-- meta de qualidade;
-- evidências necessárias para dizer que está pronto.
-
-## Avaliação Baseline
-
-| Dimensão | Nota | Justificativa | Ação prioritária |
-|---|---|---|---|
-| Adequação ao pedido | preencher | preencher | preencher |
-| Estrutura | preencher | preencher | preencher |
-| Fundamentação | preencher | preencher | preencher |
-| Desenvolvimento | preencher | preencher | preencher |
-| Normas e formatação | preencher | preencher | preencher |
-| Qualidade da linguagem | preencher | preencher | preencher |
-| Coerência interna | preencher | preencher | preencher |
-| Entrega final | preencher | preencher | preencher |
-
-## Regras de Honestidade
-
-Não infle nota para agradar. Se uma dimensão não pôde ser avaliada por falta de material, marque como "não avaliada" e registre a pendência.
-
-Para reduzir subjetividade, cada nota deve citar pelo menos uma evidência observável. Exemplo: "há responsável formal", "não há fonte para número de usuários", "PDF compila sem erro fatal", "tabela está fora da margem".
+Remova critérios irrelevantes, adicione critérios específicos e use pesos somente quando houver decisão registrada. Uma média nunca altera o status de bloqueadores.

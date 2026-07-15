@@ -1,57 +1,20 @@
-# Referências Candidatas
+# Registro de Fontes
 
-Use este arquivo para controlar fontes.
+Fonte de verdade para fontes e sua cadeia de uso.
 
-## Status
+## Estados permitidos
 
-| Status | Significado |
-|---|---|
-| buscar | ainda precisa ser encontrada |
-| encontrada | localizada, mas ainda não validada |
-| validada | confiável e útil |
-| incorporada | usada no texto |
-| descartada | rejeitada com motivo |
+`BUSCAR`, `ENCONTRADA`, `INSPECIONADA`, `CONFIAVEL`, `INCORPORADA`, `CITADA`, `DESCARTADA`.
 
-## Fontes Prioritárias
+| ID | Status | Fonte | Tipo | Link/caminho/DOI/hash | Inspecionada por/em | Localização útil | Avaliação de confiabilidade | Afirmações ligadas | Local de uso | Pendência ou descarte |
+|---|---|---|---|---|---|---|---|---|---|---|
+| FON-001 | BUSCAR | preencher | artigo/manual/arquivo/site/dado | preencher | preencher | preencher | preencher | AF-001 | preencher | preencher |
 
-| Status | Referência provisória | Link ou identificador | Uso provável | Observação |
-|---|---|---|---|---|
-| buscar | preencher | preencher | preencher | preencher |
+## Regras
 
-## Fontes Encontradas
-
-| Status | Referência | Link exato ou identificador | Achado útil | Onde usar | Confiança | Pendência |
-|---|---|---|---|---|---|---|
-| encontrada | preencher | preencher | preencher | preencher | baixa/média/alta | preencher |
-
-## Fontes Incorporadas
-
-| Referência | Link exato ou identificador | Local no texto | Afirmação sustentada | Data de acesso | Conferência |
-|---|---|---|---|---|---|
-| preencher | preencher | preencher | preencher | preencher | pendente |
-
-## Fontes Descartadas
-
-| Referência | Motivo |
-|---|---|
-| preencher | preencher |
-
-## Termos de Busca
-
-### Português
-
-- preencher
-
-### Inglês
-
-- preencher
-
-## Bases Sugeridas
-
-- Google Scholar
-- SciELO
-- Portal de Periódicos CAPES
-- PubMed, quando aplicável
-- repositório institucional
-- sites oficiais de órgãos públicos
-- normas e manuais oficiais
+- `ENCONTRADA` significa apenas localizada;
+- `INSPECIONADA` exige registro do conteúdo relevante;
+- `CONFIAVEL` depende da aplicabilidade ao caso;
+- `INCORPORADA` indica uso no artefato;
+- `CITADA` exige posição e sustentação revisadas;
+- fonte descartada mantém histórico e motivo.

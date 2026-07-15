@@ -1,52 +1,35 @@
 # Start Aqui
 
-Este é o arquivo de entrada do Docframe.
+Este é o ponto de entrada do Docframe.
 
-Se você é o usuário, diga ao agente:
+## Instrução curta
 
 ```text
-Leia este arquivo e siga o protocolo do Docframe.
+Leia o protocolo do Docframe, identifique o estado atual e conduza o próximo passo necessário.
 ```
 
-Se você é o agente, execute a sequência abaixo sem pular etapas.
+## Bootstrap obrigatório
 
-Todos os caminhos citados neste kit são relativos à raiz da pasta `docframe/`.
+1. Leia `core/REGRAS_FIXAS.md`.
+2. Leia `core/PROTOCOLO_ESTADOS.md`.
+3. Leia `agente/PROMPT_AGENTE.md`.
+4. Leia `projeto/CONTEXTO_TRABALHO.md`.
+5. Use `agente/MANIFESTO_CONTEXTO.md` para carregar somente o necessário.
+6. Verifique o gate do estado atual antes de executar a próxima etapa.
 
-## Sequência Obrigatória do Agente
+Não carregue todos os módulos por reflexo. Não comece a entrega final porque “parece haver contexto suficiente”. A transição precisa indicar evidência observável.
 
-1. Ler `agente/PROMPT_AGENTE.md`.
-2. Ler `core/REGRAS_FIXAS.md`.
-3. Ler `core/LATEX.md`.
-4. Ler `core/VALIDACAO_E_ENTREGA.md`.
-5. Ler `agente/ENTREVISTA_INICIAL.md`.
-6. Ler `agente/ROTEAMENTO_MODOS.md`.
-7. Verificar se os arquivos vivos em `projeto/` já foram preenchidos.
-8. Se o contexto ainda estiver incompleto, entrevistar o usuário em linguagem simples.
-9. Ativar apenas os modos e módulos necessários ao tipo de trabalho.
-10. Atualizar os arquivos em `projeto/` com base nas respostas.
-11. Confirmar ao usuário o que foi entendido.
-12. Só então iniciar redação, revisão, pesquisa, avaliação ou formatação.
+## Primeira resposta do agente
 
-## O Que o Agente Pode Modificar
+Em poucas linhas, informe:
 
-O agente pode modificar os arquivos em `projeto/`:
+- estado identificado;
+- objetivo e produto final, quando conhecidos;
+- lacunas de maior impacto;
+- próximo passo permitido pelo protocolo.
 
-- `CONTEXTO_TRABALHO.md`
-- `RUBRICA.md`
-- `CHECKLIST_ENTREGA.md`
-- `SCORECARD.md`
-- `BASE_CONHECIMENTO.md`
-- `REFERENCIAS_CANDIDATAS.md`
-- `REGISTRO_ITERACOES.md`
-- arquivos dentro de `logs/`, quando uma iteração precisar de registro detalhado
+O usuário pode responder “não sei”. Registre a lacuna, adote hipótese conservadora e reversível quando possível e prossiga até encontrar um bloqueador real.
 
-O agente não deve modificar `core/` durante um trabalho comum. A pasta `core/` é a base fixa do framework.
+## Retomada
 
-## Primeira Resposta Esperada do Agente
-
-O agente deve começar explicando, em poucas linhas:
-
-1. que vai fazer uma entrevista curta;
-2. que o usuário pode responder com "não sei";
-3. que o objetivo é adaptar o Docframe ao tipo real de trabalho;
-4. que nenhuma escrita final começa antes do contexto mínimo estar claro.
+Em uma nova sessão, o agente deve considerar `projeto/CONTEXTO_TRABALHO.md` a fonte de verdade do estado. Logs e chat servem como evidência auxiliar, nunca como estado canônico.
