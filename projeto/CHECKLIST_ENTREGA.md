@@ -1,86 +1,59 @@
-# Checklist de Entrega
+# Gates e Checklist de Entrega
 
-Este checklist deve ser adaptado ao tipo real de trabalho.
+Este arquivo registra gates objetivos. Marcar um item exige evidência.
 
-## Estado
+## G1 — contexto mínimo
 
-- **Status**: genérico, precisa adaptar
-- **Tipo de trabalho**: preencher
-- **Prazo**: preencher
-- **Bloqueadores conhecidos**: preencher
+| Item | Resultado | Evidência |
+|---|---|---|
+| objetivo, produto e público cobertos | NAO_AVALIADO | preencher |
+| formato e canal deliberados | NAO_AVALIADO | preencher |
+| materiais, autoridades e restrições catalogados | NAO_AVALIADO | preencher |
+| critério de conclusão e autonomia definidos | NAO_AVALIADO | preencher |
+| nenhuma lacuna bloqueadora impede modelagem | NAO_AVALIADO | preencher |
 
-## 1. Contexto e Escopo
+## G2 — planejamento
 
-- [ ] Tipo de trabalho identificado
-- [ ] Enunciado, manual ou regra principal registrado
-- [ ] Prazo registrado
-- [ ] Tamanho esperado registrado
-- [ ] Público avaliador identificado
-- [ ] Produto final definido
-- [ ] Formato final e stack de geração definidos
-- [ ] Fora de escopo registrado
+| Item | Resultado | Evidência |
+|---|---|---|
+| escopo e fora de escopo definidos | NAO_AVALIADO | preencher |
+| plano ou estrutura verificada | NAO_AVALIADO | preencher |
+| rubrica e checklist adaptados | NAO_AVALIADO | preencher |
+| dependências e bloqueadores registrados | NAO_AVALIADO | preencher |
 
-## 2. Fontes e Conteúdo
+## G3 — pesquisa e afirmações
 
-- [ ] Materiais fornecidos pelo usuário catalogados
-- [ ] Política de pesquisa definida
-- [ ] Referências candidatas registradas
-- [ ] Fontes usadas no texto rastreáveis
-- [ ] Dados ou resultados não foram inventados
-- [ ] Afirmações técnicas relevantes têm base
-- [ ] Afirmações importantes classificadas por nível de verdade
-- [ ] Promessas fortes revisadas, comprovadas ou reescritas
+| Item | Resultado | Evidência |
+|---|---|---|
+| política de pesquisa respeitada | NAO_AVALIADO | preencher |
+| fontes usadas estão inspecionadas | NAO_AVALIADO | preencher |
+| afirmações materiais ligadas a origem | NAO_AVALIADO | preencher |
+| citações conferidas quando aplicável | NAO_AVALIADO | preencher |
 
-## 3. Estrutura
+## G5 — verificação
 
-- [ ] Estrutura do trabalho definida
-- [ ] Seções obrigatórias incluídas
-- [ ] Ordem das seções faz sentido
-- [ ] Objetivo central aparece com clareza
-- [ ] Conclusão ou fechamento responde ao objetivo
+| Item | Resultado | Evidência |
+|---|---|---|
+| verificações determinísticas executadas | NAO_AVALIADO | preencher |
+| rubrica aplicada com evidências | NAO_AVALIADO | preencher |
+| artefato real gerado, aberto e inspecionado | NAO_AVALIADO | preencher |
+| bloqueadores reavaliados | NAO_AVALIADO | preencher |
+| motivo de parada registrado | NAO_AVALIADO | preencher |
 
-## 4. Linguagem
+## Validação específica do formato
 
-- [ ] Texto sem linguagem genérica de IA
-- [ ] Voz do autor preservada
-- [ ] Conectivos repetidos revisados
-- [ ] Frases longas demais revisadas
-- [ ] Parágrafos com ideia central clara
-- [ ] Termos técnicos usados corretamente
+| Formato declarado | Verificações aplicáveis | Resultado | Evidência |
+|---|---|---|---|
+| preencher | definir com base em `core/VALIDACAO_E_ENTREGA.md` | NAO_AVALIADO | preencher |
 
-## 5. Normas e Formatação
+## G6 — prontidão
 
-- [ ] Norma principal registrada
-- [ ] Citações seguem a norma definida
-- [ ] Referências seguem a norma definida
-- [ ] Tabelas e figuras numeradas, se houver
-- [ ] Arquivo final gerado no formato definido
-- [ ] Se for LaTeX, documento compilou sem erro fatal
-- [ ] Se não for LaTeX, stack real de geração validada
-- [ ] Revisão visual final feita no PDF
+| Item | Resultado | Evidência |
+|---|---|---|
+| versão e artefato canônicos identificados | NAO_AVALIADO | preencher |
+| requisitos obrigatórios atendidos | NAO_AVALIADO | preencher |
+| bloqueadores incompatíveis fechados | NAO_AVALIADO | preencher |
+| limitações restantes comunicadas | NAO_AVALIADO | preencher |
+| prontidão declarada de forma específica | NAO_AVALIADO | preencher |
 
-## 6. Revisão Final
-
-- [ ] Checklist específico do tipo de trabalho concluído
-- [ ] Scorecard atualizado
-- [ ] Pendências registradas
-- [ ] Riscos informados ao usuário
-- [ ] Versão final localizada e identificada
-- [ ] Status de prontidão declarado com precisão
-
-## 7. Feito vs Validado
-
-| Item crítico | Escrito | Validado por fonte | Validado tecnicamente | Aprovado |
-|---|---|---|---|---|
-| preencher | [ ] | [ ] | [ ] | [ ] |
-
-## Critério de Pronto
-
-O trabalho só pode ser chamado de pronto quando:
-
-- o PDF final foi gerado;
-- as pendências bloqueadoras foram resolvidas ou aceitas pelo usuário;
-- as fontes usadas são rastreáveis;
-- o checklist específico foi cumprido;
-- o registro da última iteração foi atualizado;
-- o status de prontidão foi declarado sem ambiguidade.
+Resultado permitido: `ATENDE`, `NAO_ATENDE`, `NAO_AVALIADO`, `NAO_APLICAVEL`.
