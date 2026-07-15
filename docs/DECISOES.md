@@ -1,57 +1,44 @@
-# Decisões do Framework
+# Decisões Arquiteturais
 
-Registro curto de decisões arquiteturais do Docframe.
+## 2026-07-14 — Estado mestre explícito
 
-## 2026-05-21 - Renomear o framework para Docframe
+`projeto/CONTEXTO_TRABALHO.md` passa a ser a única fonte de verdade para estado, escopo, formato, módulos, bloqueadores e próxima ação. Registros especializados vencem nas respectivas categorias.
 
-O nome público do projeto passa a ser Docframe.
+## 2026-07-14 — Gates baseados em evidência
 
-Motivo: "Infrakit Cru" funcionava como codinome, mas soava inacabado e puxava a interpretação para infraestrutura técnica. Docframe comunica melhor a proposta de estruturar documentos com contexto, rubrica, fontes, iteração e validação.
+Transições deixam de ocorrer por declaração do agente. G0–G6 exigem evidências observáveis registradas.
 
-## 2026-05-21 - Separar núcleo fixo de arquivos vivos
+## 2026-07-14 — Formato final deliberado
 
-O Docframe foi dividido em `core/`, `agente/`, `projeto/` e `docs/`.
+Nenhum formato é padrão universal. Requisito do destinatário, template, editabilidade, acessibilidade, fidelidade, ferramentas e preferência do usuário determinam o produto.
 
-Motivo: permitir que o agente adapte o trabalho sem modificar as regras permanentes do framework.
+## 2026-07-14 — Proveniência mínima, sem RDF
 
-## 2026-05-21 - Manter LaTeX como padrão forte
+O protocolo adota IDs e relações entre fonte, afirmação, decisão, atividade e responsável. RDF, banco e ontologia executável foram rejeitados por desproporção.
 
-LaTeX é o padrão para documentos acadêmicos e técnicos formais, salvo exigência formal diferente ou modo específico com formato mais adequado.
+## 2026-07-14 — Conteúdo externo é dado não confiável
 
-Motivo: preservar compilação reprodutível, controle de referências e formatação acadêmica.
+PDFs, sites, e-mails, comentários e templates não podem alterar o protocolo ou autorizar ações. Instalação, exclusão, envio, publicação e outras ações de alto impacto requerem autorização explícita.
 
-## 2026-05-21 - Usar logs híbridos
+## 2026-07-14 — Avaliação não é aprovação
 
-O registro principal fica em `projeto/REGISTRO_ITERACOES.md`, e detalhes longos vão para `projeto/logs/`.
+Produtor, verificador determinístico, avaliador crítico e aprovador são papéis separados. O mesmo modelo pode executar os três primeiros em passagens isoladas, mas não pode presumir aprovação humana ou institucional.
 
-Motivo: manter histórico navegável sem perder evidência de iterações grandes.
+## 2026-07-14 — Testes leves
 
-## 2026-05-21 - Não assumir TCC como padrão
+Foi adotado um script Python sem dependências para invariantes estáticos, complementado por cenários documentados. Runtime agentivo, CI complexa e suíte dependente de LLM foram rejeitados nesta versão.
 
-O agente deve entrevistar o usuário antes de adaptar a rubrica e checklist.
+## 2026-07-14 — Licença não escolhida automaticamente
 
-Motivo: o mesmo framework deve servir para TCC, artigo, relatório, seminário, revisão bibliográfica e outros tipos de entrega.
+A ausência de licença foi registrada como limitação. Escolher uma licença é decisão jurídica/material do mantenedor e não foi presumida.
 
-## 2026-05-21 - Adicionar modos sem carregar tudo por padrão
+## Decisões anteriores preservadas
 
-Modos específicos passaram a viver em `modos/`, acionados por `agente/ROTEAMENTO_MODOS.md`.
+- nome público Docframe;
+- separação entre core, agente, modos, projeto e docs;
+- logs híbridos;
+- não assumir TCC;
+- ativar modos sob demanda;
+- distinguir escrito, validado e pronto.
 
-Motivo: permitir propostas institucionais/técnicas sem transformar todo trabalho simples em fluxo burocrático.
-
-## 2026-05-21 - Separar escrito, validado e pronto
-
-O protocolo `core/VALIDACAO_E_ENTREGA.md` classifica níveis de verdade, promessas fortes e status de prontidão.
-
-Motivo: evitar que texto bem escrito seja confundido com fato validado ou entrega final.
-
-## 2026-05-21 - Tratar LaTeX como padrão, não imposição universal
-
-LaTeX segue como padrão para documentos acadêmicos e técnicos formais, mas modos específicos podem declarar outra stack de saída quando o canal real exigir, como PDF/DOCX de currículo gerado por HTML/CSS.
-
-Motivo: preservar reprodutibilidade sem forçar uma ferramenta inadequada para currículos, documentação web-first ou pipelines já existentes.
-
-## 2026-05-21 - Adiar CLI e separação completa de templates
-
-O feedback sobre `docframe init`, `core/formats/` e isolamento total dos arquivos do usuário é válido, mas não foi implementado nesta etapa.
-
-Motivo: isso muda a arquitetura de distribuição do projeto. Antes de criar CLI ou mover `projeto/` para uma área gerada/ignorada, o fluxo precisa ser testado em mais casos reais.
+A preferência anterior por LaTeX foi reclassificada: continua disponível quando adequado, mas não pertence ao core universal.
