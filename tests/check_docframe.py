@@ -57,6 +57,22 @@ def read(rel: str) -> str:
     return path.read_text(encoding="utf-8")
 
 
+def markdown_tables(text: str) -> list[list[tuple[int, list[str]]]]:
+    """Agrupa tabelas Markdown, preservando o número original de cada linha."""
+    tables: list[list[tuple[int, list[str]]]] = []
+    current: list[tuple[int, list[str]]] = []
+
+    for number, line in enumerate(text.splitlines() + [""], 1):
+        if line.lstrip().startswith("|"):
+            cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+            current.append((number, cells))
+        elif current:
+            tables.append(current)
+            current = []
+
+    return tables
+
+
 for rel in REQUIRED:
     read(rel)
 
@@ -130,24 +146,45 @@ for md in all_md:
             fail(f"link Markdown quebrado em {md.relative_to(ROOT)}: {raw}")
 
 for md in all_md:
-    lines = md.read_text(encoding="utf-8").splitlines()
-    block: list[int] = []
-    for line in lines + [""]:
-        values = [int(v) for v in re.findall(r"(?<!\d)(\d{1,3})%", line)]
-        if values and line.lstrip().startswith("|"):
-            block.extend(values)
-        elif block:
-            if sum(block) != 100:
-                fail(f"pesos em {md.relative_to(ROOT)} somam {sum(block)}%, não 100%")
-            block = []
+    for table in markdown_tables(md.read_text(encoding="utf-8")):
+        header = [cell.lower() for cell in table[0][1]]
+        weight_indices = [idx for idx, name in enumerate(header) if "peso" in name]
+        if not weight_indices:
+            continue
+
+        values: list[int] = []
+        for _, cells in table[2:]:
+            for idx in weight_indices:
+                if idx < len(cells):
+                    values.extend(int(value) for value in re.findall(r"(?<!\d)(\d{1,3})%", cells[idx]))
+
+        if values and sum(values) != 100:
+            fail(f"pesos em {md.relative_to(ROOT)} somam {sum(values)}%, não 100%")
+
+missing_evidence = {"", "-", "preencher", "pendente", "não informada", "nao informada"}
+validated_statuses = {"ATENDE", "SUSTENTADA", "VALIDADA"}
 
 for md in all_md:
-    for number, line in enumerate(md.read_text(encoding="utf-8").splitlines(), 1):
-        if line.lstrip().startswith("|"):
-            cells = [c.strip() for c in line.strip().strip("|").split("|")]
-            if any(c in {"ATENDE", "SUSTENTADA", "VALIDADA"} for c in cells):
-                if cells[-1].lower() in {"", "preencher", "pendente", "não informada", "nao informada"}:
-                    fail(f"item validado sem evidência em {md.relative_to(ROOT)}:{number}")
+    for table in markdown_tables(md.read_text(encoding="utf-8")):
+        header = [cell.lower() for cell in table[0][1]]
+        status_idx = next(
+            (idx for idx, name in enumerate(header) if name in {"resultado", "status"} or name.startswith("status ")),
+            None,
+        )
+        evidence_idx = next(
+            (idx for idx, name in enumerate(header) if "evidência" in name or "localização" in name),
+            None,
+        )
+        if status_idx is None or evidence_idx is None:
+            continue
+
+        for row_num, cells in table[2:]:
+            if status_idx >= len(cells) or evidence_idx >= len(cells):
+                continue
+            status = cells[status_idx].strip().upper()
+            evidence = cells[evidence_idx].strip().lower()
+            if status in validated_statuses and evidence in missing_evidence:
+                fail(f"item validado sem evidência em {md.relative_to(ROOT)}:{row_num}")
 
 if ERRORS:
     print("FALHA — invariantes do Docframe")
